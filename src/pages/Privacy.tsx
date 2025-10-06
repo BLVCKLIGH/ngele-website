@@ -114,7 +114,7 @@ const Privacy = () => {
             </p>
             <p className="text-muted-foreground leading-relaxed">
               <strong>SHARMORIA Mobile Spa Services</strong><br />
-              Phone: <a href="tel:+27831234567" className="text-primary hover:underline">+27 83 123 4567</a><br />
+              Phone: <a href="tel:+27762935665" className="text-primary hover:underline">+27 76 293 5665</a><br />
               Service Area: Johannesburg & Pretoria
             </p>
 

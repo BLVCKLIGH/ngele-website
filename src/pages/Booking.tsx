@@ -23,6 +23,7 @@ const Booking = () => {
     email: "",
     phone: "",
     address: "",
+    idDocument: null as File | null,
     paymentMethod: "cash",
   });
 
@@ -98,11 +99,12 @@ const Booking = () => {
       email: "",
       phone: "",
       address: "",
+      idDocument: null,
       paymentMethod: "cash",
     });
   };
 
-  const handleChange = (field: string, value: string) => {
+  const handleChange = (field: string, value: string | File | null) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
@@ -419,7 +421,7 @@ const Booking = () => {
                     <Input
                       type="tel"
                       id="phone"
-                      placeholder="+27 83 123 4567"
+                      placeholder="+27 76 293 5665"
                       value={formData.phone}
                       onChange={(e) => handleChange("phone", e.target.value)}
                       required
@@ -436,6 +438,21 @@ const Booking = () => {
                       onChange={(e) => handleChange("address", e.target.value)}
                       required
                     />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="idDocument">ID/Passport Document *</Label>
+                    <Input
+                      type="file"
+                      id="idDocument"
+                      accept="image/*,.pdf"
+                      onChange={(e) => handleChange("idDocument", e.target.files?.[0] || null)}
+                      required
+                      className="cursor-pointer"
+                    />
+                    <p className="text-xs text-muted-foreground">
+                      Please upload a clear photo or scan of your ID or passport
+                    </p>
                   </div>
 
                   <div className="space-y-3">

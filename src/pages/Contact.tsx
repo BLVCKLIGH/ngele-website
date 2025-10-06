@@ -100,7 +100,7 @@ const Contact = () => {
                   <Input
                     type="tel"
                     id="phone"
-                    placeholder="+27 83 123 4567"
+                    placeholder="+27 76 293 5665"
                     value={formData.phone}
                     onChange={(e) => handleChange("phone", e.target.value)}
                   />
@@ -136,7 +136,7 @@ const Contact = () => {
 
                 <div className="space-y-4">
                   <a
-                    href="tel:+27831234567"
+                    href="tel:+27762935665"
                     className="flex items-start gap-4 p-4 rounded-lg hover:bg-muted transition-colors group"
                   >
                     <div className="w-12 h-12 rounded-full gradient-hero flex items-center justify-center flex-shrink-0">
@@ -147,13 +147,13 @@ const Contact = () => {
                         Phone
                       </h3>
                       <p className="text-primary group-hover:underline">
-                        +27 83 123 4567
+                        +27 76 293 5665
                       </p>
                     </div>
                   </a>
 
                   <a
-                    href="https://wa.me/27831234567"
+                    href="https://wa.me/27762935665"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-start gap-4 p-4 rounded-lg hover:bg-muted transition-colors group"
@@ -195,9 +195,7 @@ const Contact = () => {
                   Operating Hours
                 </h3>
                 <div className="space-y-2 text-muted-foreground">
-                  <p>Monday - Friday: 8:00 AM - 17:00 PM</p>
-                  <p>Saturday: 8:00 AM - 15:00 PM</p>
-                  <p>Sunday: 8:00 AM - 13:00 PM</p>
+                  <p>Every day: 9:00 AM - 6:00 PM</p>
                 </div>
                 <p className="text-sm text-muted-foreground mt-4">
                   Book your appointment during our operating hours.

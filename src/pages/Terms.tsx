@@ -91,10 +91,10 @@ const Terms = () => {
             <p className="text-muted-foreground leading-relaxed mt-8">
               For questions about our terms and conditions, please contact us at{" "}
               <a
-                href="tel:+27831234567"
+                href="tel:+27762935665"
                 className="text-primary hover:underline"
               >
-                +27 83 123 4567
+                +27 76 293 5665
               </a>
               .
             </p>

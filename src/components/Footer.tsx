@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, MessageCircle } from "lucide-react";
+import { FaXTwitter, FaTiktok } from "react-icons/fa6";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -57,18 +58,19 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground">Contact</h4>
             <div className="flex flex-col space-y-3">
               <a
-                href="tel:+27831234567"
+                href="tel:+27762935665"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
               >
                 <Phone className="h-4 w-4" />
-                +27 83 123 4567
+                +27 76 293 5665
               </a>
               <a
-                href="https://wa.me/27831234567"
+                href="https://wa.me/27762935665"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
               >
+                <MessageCircle className="h-4 w-4" />
                 WhatsApp Chat
               </a>
               <div className="flex items-start gap-2 text-muted-foreground">
@@ -78,7 +80,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Legal */}
+          {/* Legal & Social */}
           <div className="space-y-4">
             <h4 className="font-semibold text-foreground">Legal</h4>
             <div className="flex flex-col space-y-2">
@@ -94,6 +96,36 @@ const Footer = () => {
               >
                 Terms & Conditions
               </Link>
+            </div>
+            <h4 className="font-semibold text-foreground mt-6">Follow Us</h4>
+            <div className="flex gap-4">
+              <a
+                href="https://facebook.com/yourpage"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a
+                href="https://x.com/yourhandle"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="X (Twitter)"
+              >
+                <FaXTwitter className="h-5 w-5" />
+              </a>
+              <a
+                href="https://tiktok.com/@yourhandle"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="TikTok"
+              >
+                <FaTiktok className="h-5 w-5" />
+              </a>
             </div>
           </div>
         </div>
